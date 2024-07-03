@@ -1,0 +1,98 @@
+h1, h2, h3{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    margin: 0 auto;
+    width: 2000px;
+    padding: 0 10px;
+}
+.title{
+    color: blue;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px grey;
+    font-size: 50px;
+}
+.subtitle{
+    color: grey;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+    margin-top: 50px;
+}
+.filter-link{
+    color: grey;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+.filter-link:hover::after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    position: absolute;
+    top: 30px;
+}
+.program{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    column-gap: 5px;
+    row-gap: 30px;
+}
+.program-item{
+    flex-basis: calc((100% - 3 * 5px) / 4);
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px 3px grey;
+    overflow: hidden;
+}
+.program-card{
+    display: flex;
+    height: 100%;
+}
+.program-img{
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.program-img.health{
+    background-image:linear-gradient(to top right, rgba(255, 0, 0, 0.5), rgba(255, 165, 0, 0.5), rgba(255, 255, 0, 0.5)), url("../img/Yoga-for-healthe-min.jpeg");
+}
+.program-img.children{
+    background-image:linear-gradient(to top right, rgba(255, 0, 0, 0.5), rgba(255, 165, 0, 0.5), rgba(255, 255, 0, 0.5)), url("../img/Children-Yoga-min.jpeg");
+}
+.program-img.elderly{
+    background-image:linear-gradient(to top right, rgba(255, 0, 0, 0.5), rgba(255, 165, 0, 0.5), rgba(255, 255, 0, 0.5)), url("../img/Seniors-Yoga-min.jpg");
+}
+.program-img.weight{
+    background-image:linear-gradient(to top right, rgba(255, 0, 0, 0.5), rgba(255, 165, 0, 0.5), rgba(255, 255, 0, 0.5)), url("../img/Yoga-to-lose-weight-min.png");
+}
+.program-content{
+    width: 50%;
+    padding: 20px;
+}
